@@ -73,6 +73,7 @@
       const startButton = document.getElementById("startButton")
 
       startButton.addEventListener("click", () => {
+          startReactor.load()
           startReactor.start()
           startButton.style.display = "none"
       })
