@@ -261,3 +261,10 @@ h1 {
     border: inset 4px #03182e;
   }
 }
+
+
+.credits{
+  background-color: #fff;
+  font-size: 20px;
+  padding: 3px 6px;
+}

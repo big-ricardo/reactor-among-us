@@ -67,13 +67,15 @@
         <div class="glass"></div>
       </div>
     </div>
-
+    <div class="credits">
+      Feito por Luis Ricardo
+    </div>
     <script src="js/start-reactor.js"></script>
     <script>
       const startButton = document.getElementById("startButton")
+      startReactor.load()
 
       startButton.addEventListener("click", async () => {
-          await startReactor.load()
           startReactor.start()
           startButton.style.display = "none"
       })
