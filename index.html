@@ -31,8 +31,7 @@
                 <div class="memory"></div>
                 <div class="memory"></div>
                 <div class="btns">
-                  <h1 id="loadButton">LOAD</h1>
-                  <h1 id="startButton" style="display: none">PLAY</h1>
+                  <h1 id="startButton">PLAY</h1>
                 </div>
             </div>
         </div>
@@ -71,14 +70,7 @@
 
     <script src="js/start-reactor.js"></script>
     <script>
-      const loadButton = document.getElementById("loadButton")
       const startButton = document.getElementById("startButton")
-
-      loadButton.addEventListener("click", () => {
-          startReactor.load()
-          loadButton.style.display = "none"
-          startButton.style.display = ""
-      })
 
       startButton.addEventListener("click", () => {
           startReactor.start()
