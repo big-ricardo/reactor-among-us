@@ -72,8 +72,8 @@
     <script>
       const startButton = document.getElementById("startButton")
 
-      startButton.addEventListener("click", () => {
-          startReactor.load()
+      startButton.addEventListener("click", async () => {
+          await startReactor.load()
           startReactor.start()
           startButton.style.display = "none"
       })
